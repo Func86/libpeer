@@ -50,7 +50,8 @@
 #endif
 
 #ifndef CONFIG_KEEPALIVE_TIMEOUT
-#define CONFIG_KEEPALIVE_TIMEOUT 10000
+// Agents SHOULD use 15 seconds, but MAY use bigger values per RFC 8445
+#define CONFIG_KEEPALIVE_TIMEOUT 30000
 #endif
 
 #ifndef CONFIG_AUDIO_DURATION
